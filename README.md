@@ -42,6 +42,7 @@ Enter a name (anything works but I prefer to give it a descriptive one based on 
     The email must be associated to your GitHub account
 6) Copy this repository's URL `git@github.com:helrick/git-tutorial.git` either from this link or by clicking the **Code** button on the top right of the repository:
 <img src="./img/url_copy.png">
+
 7) Test cloning this repository on your VM:
     ```bash
     cd ~/Documents
