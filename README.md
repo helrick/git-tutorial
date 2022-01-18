@@ -7,6 +7,7 @@ Git Tutorial for the Primers for Predocs course, January 2022
 [Set-up](#set-up)<br>
 [Create a Branch](#create-a-branch)<br>
 [Open a Pull Request](#open-a-pull-request)<br>
+[Additional Resources](#additional-resources)<br>
 
 ## Prerequisites
 * GitHub account which you can log in to (please send me a slack message with this account)
@@ -39,7 +40,7 @@ Enter a name (anything works but I prefer to give it a descriptive one based on 
 5) Set your local git user by running:
     ```bash
     git config --global user.email "<your_github_email@example.com>"
-    git config --global user.name "Your Name"
+    git config --global user.name "<your-github-username>"
     ```
     The email must be associated to your GitHub account
 6) Copy this repository's URL either from here -> `git@github.com:helrick/git-tutorial.git` or by clicking the **Code** button on the top right of the repository:
@@ -53,7 +54,7 @@ Enter a name (anything works but I prefer to give it a descriptive one based on 
     This should create a folder, `git-tutorial` in your `Documents` directory containing the code from this repo.
 
 ## Create a Branch
-The main branch in GitHub is the default branch where commits are made. However, it is usful to "branch" off of the main branch to develop specific features, coordinate work, or refactor code while knowing you can switch back to a "working code point" if needed.
+The main branch in GitHub is the default branch where commits are made. However, it is usful to create branches; to develop specific features, coordinate work, or to refactor code while knowing you can switch back to a "working code point" if needed.
 
 > I've made everyone in the course who sent me their username an "Issue". You should be able to find it by checking the [Issues Page](https://github.com/helrick/git-tutorial/issues/) of the repository and looking for your username, or checking your [Notifications](https://github.com/notifications). Make a note of the issue number (preceded by a hashtag) <img src="./img/issue_number.png">
 
@@ -90,9 +91,9 @@ The main branch in GitHub is the default branch where commits are made. However,
 
 ## Open a Pull Request
 
-This feature is only available on GitHub (to my knowledge anyways, it may be called something else on the different platforms). It becomes useful during collaborative work as it allows you to notify others of your proposed changes and have others test them your code before updating the main branch.
+This feature is only available on GitHub (to my knowledge anyways, it may be called something else on different platforms). It becomes useful during collaborative work as it allows you to notify others of your proposed changes and have others test your code before updating the main branch.
  
- 1) When you navigate to [this repository](https://github.com/helrick/git-tutorial) after pushing your branch, there should already be a banner at the top asking if you'd like to open a Pull Request (PR):
+ 1) When you navigate to [this repository](https://github.com/helrick/git-tutorial) after pushing your branch, there should already be a banner at the top asking if you'd like to open a Pull Request (PR) for your branch:
     <img src="./img/pr_banner.png">
     Click it if so. If this banner doesn't appear, go to the [Pull requests](https://github.com/helrick/git-tutorial/pulls) tab, and click "New pull request":
     <img src="./img/pull_request.png">
@@ -100,3 +101,11 @@ This feature is only available on GitHub (to my knowledge anyways, it may be cal
     <img src="./img/select_branch.png">
  
 > I will then merge your branch into the main branch which should put your .txt file into the participants directory. While you're waiting for me to merge it, you can check for your Issue on the [Project Board](https://github.com/helrick/git-tutorial/projects/1) for this repo. I've set it up in "Automated Kaban Board" mode so before you open a PR, your issue should be in the "To do" column. Once you've opened the PR, it should move to the "In progress" column, and finally, once I've merged your PR (writing "closes #issue" in the comment), your issue should be in the "Done" column.
+
+## Additional Resources
+
+* [This guide by Seth Robertson for what to do when you've messed up](https://sethrobertson.github.io/GitFixUm/fixup.html)
+* [VSCode](https://code.visualstudio.com/download) is a code editor that comes built in with Git support. This is a [quick guide](https://www.digitalocean.com/community/tutorials/how-to-use-git-integration-in-visual-studio-code) on how to use git in VSCode
+* [GitHub Actions](https://docs.github.com/en/actions) are a great feature which you can use, for example, to automatically run tests every time you open a Pull Request
+* Related to this, [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) are a feature built into git which can run a script every time you perform an action locally. For example, if you use Jupyter notebook, you could set up a Git Hook to convert .ipynb files to python and html every time you make a commit.
+
