@@ -104,8 +104,8 @@ This feature is only available on GitHub (to my knowledge anyways, it may be cal
 
 ## Additional Resources
 
-* [This guide by Seth Robertson for what to do when you've messed up](https://sethrobertson.github.io/GitFixUm/fixup.html)
+* [This guide by Seth Robertson](https://sethrobertson.github.io/GitFixUm/fixup.html) for what to do when you've messed up
 * [VSCode](https://code.visualstudio.com/download) is a code editor that comes built in with Git support. This is a [quick guide](https://www.digitalocean.com/community/tutorials/how-to-use-git-integration-in-visual-studio-code) on how to use git in VSCode
 * [GitHub Actions](https://docs.github.com/en/actions) are a great feature which you can use, for example, to automatically run tests every time you open a Pull Request
 * Related to this, [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) are a feature built into git which can run a script every time you perform an action locally. For example, if you use Jupyter notebook, you could set up a Git Hook to convert .ipynb files to python and html every time you make a commit.
-
+* Spice up your commit messages with [gitmojis](https://gitmoji.dev)
